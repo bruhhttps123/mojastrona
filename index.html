@@ -7,18 +7,19 @@
         body {
             margin: 0;
             padding: 0;
-            background: url("https://images.unsplash.com/photo-1503264116251-35a269479413") no-repeat center center fixed;
-            background-size: cover;
+            background: #000;
             font-family: Arial, sans-serif;
             text-align: center;
+            color: white;
         }
-
-        .container {
-            margin-top: 20%;
+        video {
+            max-width: 80%;
+            margin-top: 50px;
+            border-radius: 10px;
         }
-
         .btn {
-            padding: 20px 40px;
+            margin-top: 20px;
+            padding: 15px 40px;
             background-color: #ff0055;
             color: white;
             border: none;
@@ -27,18 +28,19 @@
             cursor: pointer;
             transition: 0.3s;
         }
-
         .btn:hover {
             background-color: #cc0044;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <button class="btn" onclick="window.location.href=ricroll.mp4>
-            Wejdź
-        </button>
-    </div>
+    <h1>Wejdź</h1>
+    <video controls autoplay>
+        <source src="ricroll.mp4" type="video/mp4">
+        Twoja przeglądarka nie wspiera odtwarzania wideo.
+    </video>
+    <br>
+    <button class="btn" onclick="alert('Miłego oglądania!')">Wejdź</button>
 </body>
 </html>
 
